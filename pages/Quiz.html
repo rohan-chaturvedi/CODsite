@@ -1,0 +1,345 @@
+<html>
+<body style="background: url('homepics/bg2.jpg') no-repeat fixed top;" font color="white">
+<head><title>Call of Duty Quiz</title>
+<h1><center><font size=6 color="#aaffff" face="Impact">What Kind of a soldier are you?</font><hr/ width=500></h1>
+</center></head>
+
+<script type="text/javascript">
+
+function soldier()
+{
+var a=0;
+var b=0;
+var c=0;
+var d=0;
+var e=0;
+var greatest;
+var sum;
+
+
+for (i=0; i<(document.quiz.q1.length); i++)
+  {
+  if (document.quiz.q1[i].checked==true)
+     {
+     if (document.quiz.q1[i].value=="as")
+        { a=a+1; }
+     else if (document.quiz.q1[i].value=="sn")
+        { b=b+1; }
+     else if (document.quiz.q1[i].value=="st")
+        { c=c+1; }
+     else if (document.quiz.q1[i].value=="hg")
+        { d=d+1; }
+     else if (document.quiz.q1[i].value=="cq")
+        { d=d+1; }
+      }
+   }
+for (i=0; i<(document.quiz.q2.length); i++)
+  { 
+   if (document.quiz.q2[i].checked==true)
+     {
+     if (document.quiz.q2[i].value=="as")
+        { a=a+1; }
+     else if (document.quiz.q2[i].value=="sn")
+        { b=b+1; }
+     else if (document.quiz.q2[i].value=="st")
+        { c=c+1; }
+     else if (document.quiz.q2[i].value=="hg")
+        { d=d+1; }
+     else if (document.quiz.q2[i].value=="cq")
+        { d=d+1; }
+      }
+  }
+  
+for (i=0; i<(document.quiz.q3.length); i++)
+  { 
+   if (document.quiz.q3[i].checked==true)
+     {
+     if (document.quiz.q3[i].value=="as")
+        { a=a+1; }
+     else if (document.quiz.q3[i].value=="sn")
+        { b=b+1; }
+     else if (document.quiz.q3[i].value=="st")
+        { c=c+1; }
+     else if (document.quiz.q3[i].value=="hg")
+        { d=d+1; }
+     else if (document.quiz.q3[i].value=="cq")
+        { d=d+1; }
+      }
+  }
+
+for (i=0; i<(document.quiz.q4.length); i++)
+  { 
+   if (document.quiz.q4[i].checked==true)
+     {
+     if (document.quiz.q4[i].value=="as")
+        { a=a+1; }
+     else if (document.quiz.q4[i].value=="sn")
+        { b=b+1; }
+     else if (document.quiz.q4[i].value=="st")
+        { c=c+1; }
+     else if (document.quiz.q4[i].value=="hg")
+        { d=d+1; }
+     else if (document.quiz.q4[i].value=="cq")
+        { d=d+1; }
+      }
+  }
+
+for (i=0; i<(document.quiz.q5.length); i++)
+  { 
+   if (document.quiz.q5[i].checked==true)
+     {
+     if (document.quiz.q5[i].value=="as")
+        { a=a+1; }
+     else if (document.quiz.q5[i].value=="sn")
+        { b=b+1; }
+     else if (document.quiz.q5[i].value=="st")
+        { c=c+1; }
+     else if (document.quiz.q5[i].value=="hg")
+        { d=d+1; }
+     else if (document.quiz.q5[i].value=="cq")
+        { d=d+1; }
+      }
+  }
+
+for (i=0; i<(document.quiz.q6.length); i++)
+  { 
+   if (document.quiz.q6[i].checked==true)
+     {
+     if (document.quiz.q6[i].value=="as")
+        { a=a+1; }
+     else if (document.quiz.q6[i].value=="sn")
+        { b=b+1; }
+     else if (document.quiz.q6[i].value=="st")
+        { c=c+1; }
+     else if (document.quiz.q6[i].value=="hg")
+        { d=d+1; }
+     else if (document.quiz.q6[i].value=="cq")
+        { d=d+1; }
+      }
+  }
+
+for (i=0; i<(document.quiz.q7.length); i++)
+  { 
+   if (document.quiz.q7[i].checked==true)
+     {
+     if (document.quiz.q7[i].value=="as")
+        { a=a+1; }
+     else if (document.quiz.q7[i].value=="sn")
+        { b=b+1; }
+     else if (document.quiz.q7[i].value=="st")
+        { c=c+1; }
+     else if (document.quiz.q7[i].value=="hg")
+        { d=d+1; }
+     else if (document.quiz.q7[i].value=="cq")
+        { d=d+1; }
+      }
+  }
+
+
+if (a>=b && a>=c && a>=d && a>=e)
+{
+  if(a==b)
+  {
+  greatest="Assault or Sniper"
+  }
+  else if(a==c)
+  {
+  greatest="Assault or Stealth"
+  }
+  else if(a==d)
+  {
+  greatest="Assault or Heavy Gunner"
+  }
+  else if(a==e)
+  {
+  greatest="Assault or Close Quarters Combat"
+  }
+  else
+  {
+  greatest="Assault"
+  }
+}
+
+else if (b>=a && b>=c && b>=d && b>=e)
+{
+  if(b==a)
+  {
+  greatest="Sniper or Assault"
+  }
+  else if(b==c)
+  {
+  greatest="Sniper or Stealth"
+  }
+  else if(b==d)
+  {
+  greatest="Sniper or Heavy Gunner"
+  }
+  else if(b==e)
+  {
+  greatest="Sniper or Close Quarters Combat"
+  }
+  else
+  {
+  greatest="Sniper"
+  }
+}  
+
+else if (c>=a && c>=b && c>=d && c>=e)
+{
+  if(c==a)
+  {
+  greatest="Stealth or Assault"
+  }
+  else if(c==b)
+  {
+  greatest="Stealth or Sniper"
+  }
+  else if(c==d)
+  {
+  greatest="Stealth or Heavy Gunner"
+  }
+  else if(c==e)
+  {
+  greatest="Stealth or Close Quarters Combat"
+  }
+  else
+  {
+  greatest="Stealth"
+  }
+}
+  
+else if (d>=a && d>=b && d>=c && d>=e)
+{
+  if(d==a)
+  {
+  greatest="Heavy Gunner or Assault"
+  }
+  else if(d==b)
+  {
+  greatest="Heavy Gunner or Sniper"
+  }
+  else if(d==c)
+  {
+  greatest="Heavy Gunner or Stealth"
+  }
+  else if(d==e)
+  {
+  greatest="Heavy Gunner or Close Quarters Combat"
+  }
+  else
+  {
+  greatest="Heavy Gunner"
+  }
+}
+
+else if (e>=a && e>=b && e>=c && e>=d)
+{
+  if(e==a)
+  {
+  greatest="Close Quarters Combat or Assault"
+  }
+  else if(e==b)
+  {
+  greatest="Close Quarters Combat or Sniper"
+  }
+  else if(e==c)
+  {
+  greatest="Close Quarters Combat or Stealth"
+  }
+  else if(e==d)
+  {
+  greatest="Close Quarters Combat or Heavy Gunner"
+  }
+  else
+  {
+  greatest="Close Quarters Combat"
+  }
+}
+
+document.getElementById("answer").value=greatest
+}
+</script>
+<form name="quiz">
+
+<table align="center">
+
+
+<tr><td><font size=6 color="red" face="Impact"><br/>1. At what range to you prefer to engage your enemy?</font><br/>
+<font size=5 color="white" face="Impact">
+<input type="radio" value="cq" name="q1"> Up close and personal</input><br/>
+<input type="radio" value="as" name="q1">  Not too far, not too close</input><br/>
+<input type="radio" value="sn" name="q1">  Over the hills and far away</input><br/>
+<input type="radio" value="st" name="q1">  Take 'em from behind</input><br/>
+<input type="radio" value="hg" name="q1">  Don't matter</font></input></font><br/>
+</td></tr>
+
+<tr><td><font size=6 color="red" face="Impact">2. What type of weapon do u prefer?<br/>
+<font size=5 color="white" face="Impact">
+<input type="radio" value="cq" name="q2">  Sub-Machine Gun</input><br/>
+<input type="radio" value="as" name="q2">  Assault Rifle</input><br/>
+<input type="radio" value="hg" name="q2">  Light Machine Gun</input><br/>
+<input type="radio" value="sn" name="q2">  Sniper</input><br/>
+<input type="radio" value="st" name="q2">  Gun's for show, knives for a pro</input><br/>
+</td></tr>
+
+<tr><td><font size=6 color="red" face="Impact">3. How would you go about controlling the battlefield?<br/>
+<font size=5 color="white" face="Impact">
+<input type="radio" value="as" name="q3">  One area at a time</input><br/>
+<input type="radio" value="sn" name="q3">  From a distance</input><br/>
+<input type="radio" value="st" name="q3">  Quietly</input><br/>
+<input type="radio" value="hg" name="q3">  Blow it up!</input><br/>
+<input type="radio" value="cq" name="q3">  In the trenches</input><br/>
+</td></tr>
+
+<tr><td><font size=6 color="red" face="Impact">4. What secondary weapon do you prefer?<br/>
+<font size=5 color="white" face="Impact">
+<input type="radio" value="as" name="q4">  Pistol</input><br/>
+<input type="radio" value="hg" name="q4">  RPG</input><br/>
+<input type="radio" value="st" name="q4">  Crossbow</input><br/>
+<input type="radio" value="cq" name="q4">  Shotgun</input><br/>
+<input type="radio" value="sn" name="q4">  Machine Pistol</input><br/>
+</td></tr>
+
+<tr><td><font size=6 color="red" face="Impact">5. What equipment would prefer to carry?<br/>
+<font size=5 color="white" face="Impact">
+<input type="radio" value="sn" name="q5">  Claymore mine</input><br/>
+<input type="radio" value="st" name="q5">  Motion detector</input><br/>
+<input type="radio" value="as" name="q5">  Smoke grenade</input><br/>
+<input type="radio" value="cq" name="q5">  Flashbang</input><br/>
+<input type="radio" value="hg" name="q5">  C4</input><br/>
+</td></tr>
+
+<tr><td><font size=6 color="red" face="Impact">6. How do you use your ammo?<br/>
+<font size=5 color="white" face="Impact">
+<input type="radio" value="st" name="q6">  Less the better</input><br/>
+<input type="radio" value="hg" name="q6">  More the better</input><br/>
+<input type="radio" value="sn" name="q6">  Make every bullet count</input><br/>
+<input type="radio" value="as" name="q6">  Enough</input><br/>
+<input type="radio" value="cq" name="q6">  Spray and Pray</input><br/>
+</td></tr>
+
+<tr><td><font size=6 color="red" face="Impact">7. What team role would you adopt?<br/>
+<font size=5 color="white" face="Impact">
+<input type="radio" value="sn" name="q7">  Sniper support</input><br/>
+<input type="radio" value="st" name="q7">  Tactical infiltration</input><br/>
+<input type="radio" value="hg" name="q7">  Defense</input><br/>
+<input type="radio" value="as" name="q7">  Offense</input><br/>
+<input type="radio" value="cq" name="q7">  Flush 'em out</input><br/>
+</td></tr>
+
+
+<tr><td><font size=6 color="red" face="Impact">8. Do you like explosives?<br/>
+<font size=5 color="white" face="Impact">
+<input type="radio" value="1" name="exp">  Yes</input><br/>
+<input type="radio" value="0" name="exp">  No</input><br/>
+</td></tr>
+
+
+</form>
+<tr align="center"><td><input type="button" value="Hoorah!" onClick="soldier()"></input></td></tr>
+<tr align="center"><td><br/><font size=5 color="red" face="Impact">You are best suited as <input type="text" name="answer" id="answer"></td></tr>
+</table>
+<hr/>
+<center><a href='mailto:rohan.chaturvedi@gmail.com'>Contact Us</a>&nbsp:&nbsp:&nbsp:<a href="aboutus.html">About Us</a></center>
+</body>
+</html>

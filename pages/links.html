@@ -1,0 +1,61 @@
+<html>
+<body style="background: url('homepics/bg.jpg') no-repeat fixed bottom;>
+<link rel="stylesheet" type="text/css" href="pages/links.css">
+<embed src="sounds/cod4theme.mp3" autostart="true" loop="true" width="2" height="0"></embed> 
+<embed src="sounds/nvg.mp3" autostart="true" loop="false" width="2" height="0"></embed>
+<script LANGUAGE="JavaScript"><!--
+
+var aySound = new Array();
+// Below: ADD source files
+aySound[0] = "sounds/pump.mp3";
+aySound[1] = "sounds/shot.mp3";
+
+// DO NOT edit below this line
+document.write('<BGSOUND ID="auIEContainer">')
+IE = (navigator.appVersion.indexOf("MSIE")!=-1 && document.all)? 1:0;
+NS = (navigator.appName=="Netscape" && navigator.plugins["LiveAudio"])? 1:0;
+ver4 = IE||NS? 1:0;
+onload=auPreload;
+
+function auPreload() {
+if (!ver4) return;
+if (NS) auEmb = new Layer(0,window);
+else {
+Str = "<DIV ID='auEmb' STYLE='position:absolute;'></DIV>";
+document.body.insertAdjacentHTML("BeforeEnd",Str);
+}
+var Str = '';
+for (i=0;i<aySound.length;i++)
+Str += "<EMBED SRC='"+aySound[i]+"' AUTOSTART='FALSE' HIDDEN='TRUE'>"
+if (IE) auEmb.innerHTML = Str;
+else {
+auEmb.document.open();
+auEmb.document.write(Str);
+auEmb.document.close();
+}
+auCon = IE? document.all.auIEContainer:auEmb;
+auCon.control = auCtrl;
+}
+function auCtrl(whSound,play) {
+if (IE) this.src = play? aySound[whSound]:'';
+else eval("this.document.embeds[whSound]." + (play? "play()":"stop()"))
+}
+function playSound(whSound) { if (window.auCon) auCon.control(whSound,true); }
+function stopSound(whSound) { if (window.auCon) auCon.control(whSound,false); }
+//-->
+</script>
+
+
+<center><table>
+<tr>
+<td width=100><font size=5 color ="#aaffff" face="Impact"><a style = "color:#aaffff; text-decoration:none;" href="home.html" target="content"  onMouseOver="playSound(0)" onMouseOut="playSound(1)" >Home</a></font></td>
+<td width=100><font size=5 color ="#aaffff" face="Impact"><a style = "color:#aaffff; text-decoration:none;" href="galleryroot.html" target="content"  onMouseOver="playSound(0)" onMouseOut="playSound(1)">Gallery</a></font></td>
+<td width=100><font size=5 color ="#aaffff" face="Impact"><a style = "color:#aaffff; text-decoration:none;" href="videos.html" target="content"  onMouseOver="playSound(0)" onMouseOut="playSound(1)">Videos</a></font></td>
+<td width=130><font size=5 color ="#aaffff" face="Impact"><a style = "color:#aaffff; text-decoration:none;" href="weapons.html" target="content"  onMouseOver="playSound(0)" onMouseOut="playSound(1)">Weapons</a></font></td>
+<td width=100><font size=5 color ="#aaffff" face="Impact"><a style = "color:#aaffff; text-decoration:none;" href="games.html" target="content"  onMouseOver="playSound(0)" onMouseOut="playSound(1)">Games</a></font></td>
+<td width=100><font size=5 color ="#aaffff" face="Impact"><a style = "color:#aaffff; text-decoration:none;" href="Quiz.html" target="content"  onMouseOver="playSound(0)" onMouseOut="playSound(1)">Quiz</a></font></td>
+<td width=100><font size=5 color ="#aaffff" face="Impact"><a style = "color:#aaffff; text-decoration:none;" href="aboutus.html" target="content"  onMouseOver="playSound(0)" onMouseOut="playSound(1)">About</a></font></td>
+</tr>
+</table></center>
+</link></body>
+</html>

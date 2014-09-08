@@ -1,0 +1,35 @@
+<html>
+<head><title>Animation</title></head>
+<body>
+<center><br></br><br></br><br></br><br></br><br></br><br></br>
+<img src="call-of-duty-logo0.jpg" onMouseover='A()'></img>
+
+<form>
+<input type="button" value ="Start" onClick='clearTimeout(TimerID);A();'></input>
+
+</form>
+
+<script>
+var x=0
+var y=11
+var TimerID
+var pics = new Array (12);
+for (i=0; i<8; i++)
+{
+pics[i]= new Image();
+pics[i].src='call-of-duty-logo'+i+'.jpg';
+}
+function A(){
+document.images[0].src=pics[x].src;
+
+x=(x+1);        //clockwise
+
+//y=(y+7)%8
+if (y<0){y=7;};
+TimerID=setTimeout('A()', 100);
+
+}
+</script>
+</center>
+</body>
+</html>

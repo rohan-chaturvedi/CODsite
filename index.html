@@ -1,0 +1,40 @@
+<html>
+<head></head>
+
+<center>
+<body style="background: url('pages/homepics/bgfull.jpg') no-repeat fixed center;>
+<link rel="stylesheet" type="text/css" href="pages/links.css">
+<a href="pages/main.html"></a>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<a href="pages/main.html"><img src="pages/homepics/call-of-duty-logo0.jpg" onMouseover='A()'></img></a>
+<form>
+
+</form>
+
+<script>
+var x=0
+var y=11
+var TimerID
+var pics = new Array (8);
+
+for (i=0; i<8; i++)
+{
+pics[i]= new Image();
+pics[i].src='pages/homepics/call-of-duty-logo'+i+'.jpg';
+}
+
+function A(){
+document.images[0].src=pics[x].src;
+
+x=(x+1);        //clockwise
+
+//y=(y+7)%8
+if (y<0){y=7;};
+TimerID=setTimeout('A()', 100);
+}
+</script>
+
+</link>
+</body></center>
+
+</html>
